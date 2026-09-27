@@ -1,0 +1,19 @@
+A stack is the ideal choice for implementing an undo/redo system because it naturally follows a Last‑In, First‑Out (LIFO) order. 
+I had to look up LIFO, actually. 
+The most recent action is always the one the user expects to undo first, and a stack guarantees that behavior. 
+When a user performs an action, it is pushed onto the undo stack. When they undo, that action is popped and moved to the redo stack. 
+This creates a clean, reversible history of changes that mirrors how professional text editors and productivity tools manage user actions. 
+The structure ensures that actions are undone and reapplied in the exact order they occurred, which is essential for predictable editing behavior.
+
+A queue is better suited for the help desk system because customer service operates on a First‑In, First‑Out (FIFO) model. 
+The first customer to request help should be the first one served. 
+By enqueuing customers at the rear and dequeuing from the front, the queue preserves fairness and prevents newer customers from skipping ahead. 
+This models real‑world lines and ensures that support agents always help customers in the correct order.
+I have an example that I tested while running the terminal, I gave the undo_redo_system a few numbers, 43, 56 and 70. 
+It successfully removed, added and documented any numbers input to the system.
+During the help_desk_queue test, I used the same numbers and made sure the system could run through all numbers successfully. 
+I was able to run the tasks successfully.
+
+Both of these implementations differ from Python’s built‑in lists because they rely on linked nodes rather than index‑based storage. 
+Lists allow random access and require shifting elements when inserting or removing from the front, which is inefficient for stack and queue operations. 
+Using nodes gives constant‑time insertion and removal at the ends and reflects how these abstract data types are implemented in lower‑level systems.
