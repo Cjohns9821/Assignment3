@@ -13,6 +13,7 @@ I have an example that I tested while running the terminal, I gave the undo_redo
 It successfully removed, added and documented any numbers input to the system.
 During the help_desk_queue test, I used the same numbers and made sure the system could run through all numbers successfully. 
 I was able to run the tasks successfully.
+I totaled around 10 inputs for each of the tests, using all available tools.
 
 Both of these implementations differ from Python’s built‑in lists because they rely on linked nodes rather than index‑based storage. 
 Lists allow random access and require shifting elements when inserting or removing from the front, which is inefficient for stack and queue operations. 
